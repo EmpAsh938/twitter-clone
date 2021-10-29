@@ -1,0 +1,23 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  color: rgb(13, 41, 59);
+  gap: 1em;
+}
+
+.tabs__icon {
+  font-size: 1.8rem;
+}
+
+.tabs__title {
+  display: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1024px) {
+  .tabs__title {
+    display: block;
+  }
+}

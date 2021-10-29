@@ -1,0 +1,56 @@
+.trends {
+  display: none;
+}
+
+.trends__wrapper {
+  width: 80%;
+  margin: 1em auto;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.trends__title {
+  font-size: 1.2rem;
+}
+
+.trends__account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 0.5em; */
+}
+
+.trends__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+.trends__name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.trends__btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .trends {
+    display: block;
+  }
+}

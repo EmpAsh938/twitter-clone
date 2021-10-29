@@ -1,0 +1,91 @@
+.writetweet {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding: 1em 0;
+  padding-right: 1em;
+}
+
+.writetweet__avatar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.writetweet__avatar--icon {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.writetweet__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.writetweet__tweet {
+  /* border: solid red; */
+}
+
+.writetweet__profileImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.writetweet__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.writetweet__image {
+  display: none;
+  height: 200px;
+}
+
+.writetweet__img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.writetweet__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.writetweet__icons {
+  display: flex;
+  gap: 1em;
+}
+
+.writetweet__icons--icon {
+  font-size: 1.5rem;
+  color: rgb(29, 155, 240);
+  box-shadow: 1px 1px 10px rgb(242, 244, 245);
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.writetweet__icons--icon:hover {
+  box-shadow: 1px 1px 10px rgb(29, 155, 240);
+}
+
+.writetweet__btn {
+  font-size: 0.95rem;
+  background-color: rgb(129, 194, 238);
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+.writetweet__btn--active {
+  cursor: pointer;
+  background-color: rgb(29, 155, 240);
+}

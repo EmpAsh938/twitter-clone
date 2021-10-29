@@ -1,0 +1,137 @@
+.signup {
+  width: 85vw;
+  min-height: 60vh;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.signup__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__title {
+  font-size: 1.8rem;
+}
+
+.signup__alert {
+  text-align: center;
+  background-color: rgb(247, 141, 48);
+  padding: 1em 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.signup__input {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.2em 0.5em;
+  outline: none;
+  border: none;
+}
+
+.signup__input::placeholder {
+  font-size: 0.95rem;
+}
+
+.signup__file {
+  height: 60px;
+  position: relative;
+}
+
+.signup__input--file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.signup__input--file + label {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  position: relative;
+}
+
+.signup__input--file + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgba(0, 0, 0, 0.4);
+  /* background-color: black; */
+}
+
+.signup__input--file:focus + label,
+.signup__input--file + label:hover {
+  cursor: pointer;
+}
+
+.signup__input--file + label * {
+  pointer-events: none;
+}
+
+.signup__input--msg {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.signup__btn {
+  background-color: rgb(29, 155, 240);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.signup__btn:hover {
+  background-color: rgb(38, 161, 243);
+}
+
+.signup__info {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.signup__link {
+  color: rgb(29, 155, 240);
+  font-weight: 600;
+}
+
+.signup__acc {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .signup {
+    width: 400px;
+  }
+}

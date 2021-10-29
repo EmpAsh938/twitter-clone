@@ -1,0 +1,85 @@
+.signin {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.signin__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin__img {
+  width: 70px;
+  display: block;
+  object-fit: cover;
+}
+
+.signin__title {
+  font-size: 1.6rem;
+}
+
+.signin__alert {
+  background-color: sandybrown;
+  width: 90%;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-top: 0.5em;
+  color: #fff;
+  font-size: 0.92rem;
+  letter-spacing: 0.8px;
+}
+
+.signin__form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.signin__input {
+  outline: none;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+.signin__input:focus {
+  outline: 1px solid rgb(29, 155, 240);
+}
+
+.signin__btn {
+  font-size: 1.1rem;
+  background-color: rgb(29, 155, 240);
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.signin__acc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  gap: 0.5em;
+}
+
+.signin__link {
+  color: rgb(29, 155, 240);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 640px) {
+  .signin {
+    width: 450px;
+  }
+}

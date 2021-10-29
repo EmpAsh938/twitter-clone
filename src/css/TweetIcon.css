@@ -1,0 +1,16 @@
+.tweeticon {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.tweeticon__icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.tweeticon__count {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.8);
+}
